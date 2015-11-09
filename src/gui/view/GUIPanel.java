@@ -1,5 +1,7 @@
 package gui.view;
 import javax.swing.JPanel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 import javax.swing.JButton;
 import javax.swing.JTextField;
 import javax.swing.SpringLayout;
@@ -36,7 +38,16 @@ public class GUIPanel extends JPanel
 	 baseLayout.putConstraint(SpringLayout.EAST, firstButton, -10, SpringLayout.EAST, this);
 		 
 	 }
-	 private void setupListeners(){
-		 
+	 private void setupListeners()
+	 {
+		firstButton.addActionListener(new ActionListener()
+		{
+		public void actionPerformed(ActionEvent click)
+		{
+			firstTextField.setText("You WHORE");
+		}
+
+		
+		});
 	 }
 }
