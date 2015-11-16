@@ -1,7 +1,9 @@
 package gui.view;
 
 import javax.swing.JFrame;
+
 import gui.controller.GUIController;
+
 import javax.swing.JPanel;
 
 public class GUIFrame extends JFrame
@@ -23,5 +25,11 @@ public class GUIFrame extends JFrame
 		this.setResizable(false);
 		this.setSize(400,400);
 		this.setVisible(true);
+	}
+
+	public  GUIController getBaseController()
+	{
+		
+		return baseController;
 	}
 }
